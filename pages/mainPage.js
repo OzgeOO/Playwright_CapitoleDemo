@@ -11,7 +11,8 @@ exports.MainPage = class MainPage {
     }
 
     async openFashionHub() {
-        await this.page.goto('https://pocketaces2.github.io/fashionhub')
+        const urlVal = process.env.URL
+        await page.goto(urlVal)
     }
 
     async goHomePage() {

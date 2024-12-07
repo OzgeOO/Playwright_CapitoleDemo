@@ -16,8 +16,8 @@ exports.AboutPage = class AboutPage {
             errors.push({exception })
         })
       
-        await page.goto('https://pocketaces2.github.io/fashionhub/about.html')
-      
+        const urlVal = process.env.URL
+        await page.goto(urlVal + '/about.html')
         console.log(logs)
         console.log(errors)
         expect(errors.length).toBe(0)

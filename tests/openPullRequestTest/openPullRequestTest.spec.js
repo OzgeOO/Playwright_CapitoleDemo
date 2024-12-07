@@ -1,6 +1,6 @@
 import { test, expect } from '@playwright/test';
 
-test('test', async ({ page }) => {
+test('Open Pull Request Control Test ', async ({ page }) => {
 
     await page.goto('https://github.com/appwrite/appwrite/pulls')
 

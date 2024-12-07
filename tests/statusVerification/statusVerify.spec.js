@@ -4,7 +4,7 @@ import { MainPage } from '../../pages/mainPage';
 async function getFulFilledResponse(page) {
   return page.waitForResponse
 }
-test('test', async ({ page }) => {
+test('Verify Returning Status Code', async ({ page }) => {
 
     const Main = new MainPage(page)
 
