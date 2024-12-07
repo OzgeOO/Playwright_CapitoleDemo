@@ -2,7 +2,11 @@
   "name": "playwright_capitole_demo",
   "version": "1.0.0",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "test:local":"cross-env TEST_ENV=local npx playwright test",
+    "test:stage":"cross-env TEST_ENV=stage npx playwright test",
+    "test:prod":"cross-env TEST_ENV=prod npx playwright test"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
@@ -10,5 +14,9 @@
   "devDependencies": {
     "@playwright/test": "^1.49.0",
     "@types/node": "^22.10.1"
+  },
+  "dependencies": {
+    "cross-env": "^7.0.3",
+    "dotenv": "^16.4.7"
   }
 }

@@ -1,3 +1,9 @@
+import dotenv, { config } from "dotenv";
+
+dotenv.config({
+  path: './env/.env.${process.env.TEST_ENV}'
+})
+
 // @ts-check
 const { defineConfig, devices } = require('@playwright/test');
 
@@ -11,7 +17,7 @@ const { defineConfig, devices } = require('@playwright/test');
  * @see https://playwright.dev/docs/test-configuration
  */
 module.exports = defineConfig({
-  testDir: './tests/login',
+  testDir: './tests/envVariables',
   /* Run tests in files in parallel */
   fullyParallel: true,
   /* Fail the build on CI if you accidentally left test.only in the source code. */
