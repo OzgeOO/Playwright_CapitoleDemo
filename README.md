@@ -26,6 +26,7 @@ To install this project:
 2. Open VS Code
 3. Clone Repository from Source Control
 4. Select the location folder where you want to store files
+```
 
 ## Run Tests
 
